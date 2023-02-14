@@ -1,0 +1,44 @@
+@font-face {
+font-family: Imported;
+src: url(./Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf);
+}
+
+.container {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.desc {
+  font-family: Imported;
+  font-size: 24px;
+  color: #444;
+  width: 70%;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ .title {
+    font-family: Imported;
+  }
+  
+@media screen and (max-width: 480px) {
+  .title {
+    font-family: Imported;
+    text-align: center;
+  }
+
+  .desc {
+    font-family: Imported;
+    width: 90%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,117 @@
+@font-face {
+font-family: Imported;
+src: url(./Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf);
+}
+
+.container {
+  height: 100px;
+  padding: 0px 50px;
+  background-color: #d1411e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.item:nth-child(2) {
+  flex: 3;
+}
+
+.item:last-child {
+  justify-content: flex-end;
+}
+
+
+
+.texts {
+  margin-left: 20px;
+}
+
+.text:first-child {
+  font-family: Imported;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.text:last-child {
+  font-family: Imported;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: white;
+}
+
+.listItem {
+  font-family: Imported;
+  margin: 20px;
+  font-weight: 500;
+ 
+}
+
+.cart{
+    position: relative;
+}
+
+.counter{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #d1411e;
+}
+
+@media screen and (max-width:480px) {
+  .container {
+    padding: 0px 5px;
+  }
+  
+.listItem {
+    margin: 15px;
+font-size: 10px;
+ 
+}
+  .item:nth-child(1) {
+    flex: 3;
+  }
+  .texts {
+  margin-left: 5px;
+}
+.image {
+  width: 100px;
+  height: 100px;
+}
+}
+
+@media(max-width:280px) {
+  .image {
+  width: 50px;
+  height: 50px;
+}
+.listItem {
+    margin: 10px;
+font-size: 8px;
+}
+}
