@@ -5,9 +5,9 @@ import { useState } from "react";
 const Featured = () => {
   const [index, setIndex] = useState(0);
   const images = [
-    "/img/shourav-sheikh-xLfqx4Psf94-unsplash.jpg",
-    "/img/the-nix-company-ljvm17bH-e0-unsplash.jpg",
-    "/img/unleashed-agency-EZpGDYWBAYA-unsplash.jpg",
+    "/img/chrome_image_14 апр. 2023 г. 13_09_08 GMT+04_00.png",
+    "/img/elevate-snnhGYNqm44-unsplash.jpg",
+    "/img/katherine-sousa-ln2R1wJ8TCM-unsplash.jpg",
 
   ];
 
@@ -26,11 +26,25 @@ const Featured = () => {
         <Image src="/img/arrowl.png" alt="" layout="fill" objectFit="contain"/>
       </div>
       <div className={styles.wrapper} style={{transform:`translateX(${-100*index}vw)`}}>
-        {images.map((img, i) => (
-          <div className={styles.imgContainer} key={i}>
-            <Image src={img} alt="" layout="fill" objectFit="contain" />
-          </div>
-        ))}
+        
+          <div className={styles.imgContainer}>
+            <Image src="/img/chrome_image_14 апр. 2023 г. 13_09_08 GMT+04_00.png" alt="" layout="fill" objectFit="cover" objectPosition="right"/>
+            <div className={styles.mainText} style={{position:"absolute"}} >
+            <p >
+            El RICO GUSTO
+            </p>
+            <p  >
+            Мы делаем ваш день лучше.
+            </p>
+        
+      </div>
+      </div>
+          <div className={styles.imgContainer}>
+            <Image src="/img/elevate-snnhGYNqm44-unsplash.jpg" alt="" layout="fill" objectFit="cover"/> 
+      </div>
+          <div className={styles.imgContainer}>
+            <Image src="/img/katherine-sousa-ln2R1wJ8TCM-unsplash.jpg" alt="" layout="fill" objectFit="cover"/> 
+      </div>
       </div>
       <div className={styles.arrowContainer} style={{ right: 0 }} onClick={()=>handleArrow("r")}>
         <Image src="/img/arrowr.png" layout="fill" alt="" objectFit="contain"/>

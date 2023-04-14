@@ -16,6 +16,7 @@ src: url(./Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf);
   font-size: 24px;
   color: #444;
   width: 70%;
+  
 }
 
 .wrapper {
@@ -24,6 +25,7 @@ src: url(./Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf);
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+ 
 }
 
  .title {

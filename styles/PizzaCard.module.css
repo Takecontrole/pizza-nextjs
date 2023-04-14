@@ -9,15 +9,17 @@ src: url(./Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
+  text-align: center;
   padding: 20px 40px;
   cursor: pointer;
   
 }
 
 .title {
+  height: 50px;
   font-family: Imported;
-  font-size: 18px;
+  font-size: 26px;
   font-weight: bold;
   color: #d1411e;
 }
@@ -33,19 +35,29 @@ src: url(./Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf);
   font-family: Imported;
   text-align: center;
   color: #777;
+  font-size: 22px;
+  height: 380px;
+  
 }
 
 @media screen and (max-width: 480px) {
   .container {
     width: 100%;
+    margin-left: 20px;
+    
   }
 
-  .title {
+  .title { 
     font-size: 30px;
   }
 
   .price,
-  .desc {
-    font-size: 24px;
+  .desc { 
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 18px;
+  }
+  .desc{
+    height: 200px;
   }
 }

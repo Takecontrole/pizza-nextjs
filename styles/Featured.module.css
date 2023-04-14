@@ -1,3 +1,7 @@
+@font-face {
+font-family: Playfair;
+src: url(./Playfair_Display/static/PlayfairDisplay-MediumItalic.ttf);
+}
 .container {
   
   height: calc(100vh - 100px);
@@ -5,7 +9,13 @@
   overflow: hidden;
   position: relative;
 }
-
+.mainText {
+  font-family: Playfair;
+  font-size: 50px;
+  left: 30%;
+  top: 35%;
+  width: 600px;
+}
 .arrowContainer {
   position: absolute;
   width: 10%;
@@ -33,5 +43,16 @@
 @media screen and (max-width: 480px) {
   .container{
     height: 80vh;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .mainText{
+    font-size: 25px;
+    left: 27%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .mainText{
+    display: none;
   }
 }
