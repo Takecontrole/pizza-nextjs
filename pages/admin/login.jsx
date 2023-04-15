@@ -11,7 +11,7 @@ const Login = () => {
 
   const handleClick = async () => {
     try {
-      await axios.post("http://localhost:3000/api/login", {
+      await axios.post("https://pizza-with-backend.vercel.app/api/login", {
         username,
         password,
       });
@@ -24,22 +24,22 @@ const Login = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <h1>Admin Dashboard</h1>
+        <h1>Панель управления</h1>
         <input
           placeholder="username"
           className={styles.input}
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
-          placeholder="password"
+          placeholder="пароль"
           type="password"
           className={styles.input}
           onChange={(e) => setPassword(e.target.value)}
         />
         <button onClick={handleClick} className={styles.button}>
-          Sign In
+          Вход
         </button>
-        {error && <span className={styles.error}>Wrong Credentials!</span>}
+        {error && <span className={styles.error}>Проверьте правильность введённых данных!</span>}
       </div>
     </div>
   );

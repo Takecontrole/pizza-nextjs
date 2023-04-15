@@ -113,19 +113,19 @@ src: url(./Roboto/Roboto-Thin.ttf);
   }
 
   .id::before {
-    content: "Order ID: ";
+    content: "id: ";
     font-weight: 500;
   }
   .name::before {
-    content: "Customer: ";
+    content: "Клиент: ";
     font-weight: 500;
   }
   .address::before {
-    content: "Address: ";
+    content: "Адресс: ";
     font-weight: 500;
   }
   .total::before {
-    content: "Total: ";
+    content: "Общая сумма: ";
     font-weight: 500;
   }
 
