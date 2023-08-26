@@ -25,6 +25,11 @@ const Navbar = () => {
           
           <li className={styles.listItem}>закажи по звонку! (8800)671010</li>
         </ul>
+        <Link href="/admin" passHref>
+         <div className={styles.mainAdminButton}>
+         Админ
+        </div>
+        </Link>
       </div>
       <Link href="/cart" passHref>
       <div className={styles.item}>

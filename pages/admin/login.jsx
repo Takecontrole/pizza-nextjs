@@ -4,8 +4,8 @@ import { useState } from "react";
 import styles from "../../styles/Login.module.css";
 
 const Login = () => {
-  const [username, setUsername] = useState(null);
-  const [password, setPassword] = useState(null);
+  const [username, setUsername] = useState("admin");
+  const [password, setPassword] = useState("12345");
   const [error, setError] = useState(false);
   const router = useRouter();
 
@@ -24,7 +24,7 @@ const Login = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <h1>Панель управления</h1>
+        <h1>Просто жми вход</h1>
         <input
           placeholder="username"
           className={styles.input}
